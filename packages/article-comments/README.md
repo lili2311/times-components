@@ -1,6 +1,8 @@
 # Article Comments
 
-This package provides a comment component for Android & iOS applications. The package has its own provider within the package so it can retrieve comment counts independent from the parent article.
+This package provides a comment component for all platforms. The Android & iOS
+variants have their own provider within the package so they can retrieve comment
+counts independently from the parent article.
 
 ## Contributing
 
@@ -27,6 +29,7 @@ Testing can be done on each platform individually
 ```
 yarn test:android
 yarn test:ios
+yarn test:web
 ```
 
 Or the tests for all platforms can be run
