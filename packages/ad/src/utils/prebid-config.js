@@ -35,7 +35,13 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   ]
 });
 
-const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
+const getPrebidSlotConfig = (
+  slot,
+  section,
+  width,
+  biddersConfig,
+  position = 0
+) => {
   const { sizes } = getSlotConfig(slot, width);
   let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
@@ -53,8 +59,11 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
     bids.push({
       bidder: "appnexus",
       params: {
+        keywords: {
+          section
+        },
         placementId: biddersConfig.appnexus.placementId,
-        section
+        position
       }
     });
   }
@@ -66,6 +75,7 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
         inventory: {
           section
         },
+        position: position === 1 ? "atf" : "btf",
         siteId: biddersConfig.rubicon.siteId,
         zoneId: biddersConfig.rubicon.zoneId
       }
