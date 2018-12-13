@@ -35,12 +35,7 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
   ]
 });
 
-const getPrebidSlotConfig = (
-  slot,
-  section,
-  width,
-  biddersConfig,
-) => {
+const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
   const position = getPosition(slot);
   const { sizes } = getSlotConfig(slot, width);
   let bids = [];

@@ -30,7 +30,7 @@ const getPosition = slotName => {
     default:
       return 0;
   }
-}
+};
 
 const getSizeMaps = slotName => {
   switch (slotName) {
