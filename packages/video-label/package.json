@@ -16,7 +16,9 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack -p",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,10 +38,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.2.56",
+    "@times-components/icons": "2.13.0",
     "@times-components/styleguide": "3.12.2",
     "lodash.invert": "4.3.0",
-    "prop-types": "15.6.2"
+    "prop-types": "15.6.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
@@ -73,5 +76,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
