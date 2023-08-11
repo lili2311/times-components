@@ -16,7 +16,9 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack -p",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -64,8 +66,9 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.12.2",
-    "@times-components/utils": "4.0.17",
-    "prop-types": "15.6.2"
+    "@times-components/utils": "6.8.0",
+    "prop-types": "15.6.2",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": ">=16.5",
@@ -75,5 +78,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
