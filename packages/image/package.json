@@ -71,7 +71,7 @@
     "@times-components/svgs": "2.1.24",
     "@times-components/utils": "4.0.17",
     "prop-types": "15.6.2",
-    "styled-components": "3.4.0"
+    "styled-components": "4.0.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
