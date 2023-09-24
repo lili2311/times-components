@@ -38,7 +38,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@storybook/addon-actions": "3.4.10",
+    "@storybook/addon-actions": "4.0.0",
     "@times-components/tealium": "1.6.15"
   },
   "peerDependencies": {
