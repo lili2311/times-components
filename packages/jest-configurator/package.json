@@ -57,14 +57,14 @@
   "dependencies": {
     "@times-components/test-utils": "2.0.5",
     "babel-core": "6.26.0",
-    "babel-jest": "23.4.2",
-    "babel-plugin-istanbul": "4.1.6",
+    "babel-jest": "24.0.0",
+    "babel-plugin-istanbul": "5.0.0",
     "babel-preset-jest": "23.2.0",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
-    "find-node-modules": "1.0.4",
+    "find-node-modules": "2.0.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.3.0",
+    "jest": "26.0.0",
     "jest-plugin-context": "2.6.0",
     "jest-plugins": "2.9.0"
   },
