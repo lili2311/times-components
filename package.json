@@ -142,7 +142,7 @@
     "prop-types": "15.6.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
-    "react-native": "0.55.4",
+    "react-native": "0.60.0",
     "react-native-storybook-loader": "1.5.1",
     "react-native-web": "0.9.0",
     "react-native-web-image-loader": "0.0.6",
@@ -157,9 +157,9 @@
   "dependencies": {
     "aws-sdk": "2.238.1",
     "babel-preset-es2015": "6.24.1",
-    "expo": "30.0.0",
+    "expo": "45.0.0",
     "react-art": "16.6.3",
-    "react-native": "0.55.4",
+    "react-native": "0.60.0",
     "react-native-showcase-loader": "1.1.0"
   }
 }
