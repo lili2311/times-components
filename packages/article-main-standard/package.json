@@ -72,7 +72,7 @@
     "@times-components/context": "0.5.22",
     "@times-components/date-publication": "0.19.54",
     "@times-components/styleguide": "3.12.2",
-    "@times-components/utils": "4.0.17",
+    "@times-components/utils": "6.8.0",
     "@times-components/video-label": "2.1.67",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
