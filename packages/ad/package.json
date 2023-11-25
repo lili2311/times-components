@@ -59,9 +59,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.12.2",
-    "@times-components/utils": "4.0.17",
-    "@times-components/watermark": "2.1.64",
+    "@times-components/styleguide": "3.28.17",
+    "@times-components/utils": "5.1.2",
+    "@times-components/watermark": "2.6.14",
     "prop-types": "15.6.2",
     "react-broadcast": "0.5.2"
   },
