@@ -62,9 +62,9 @@
     "babel-preset-jest": "23.2.0",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
-    "find-node-modules": "1.0.4",
+    "find-node-modules": "2.1.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.3.0",
+    "jest": "25.0.0",
     "jest-plugin-context": "2.6.0",
     "jest-plugins": "2.9.0"
   },
