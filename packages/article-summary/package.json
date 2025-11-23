@@ -67,7 +67,7 @@
     "@times-components/markup": "3.2.34",
     "@times-components/markup-forest": "1.2.8",
     "@times-components/styleguide": "3.12.2",
-    "@times-components/video-label": "2.1.67",
+    "@times-components/video-label": "2.3.21",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
