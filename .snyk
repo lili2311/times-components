@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.1
+version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:ws:20171108':
@@ -30,4 +30,81 @@ ignore:
     - '*':
         reason: None Given
         expires: 2019-02-03T16:48:38.443Z
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - expo > @expo/vector-icons > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: expo > @expo/vector-icons > lodash
+    - babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-es2015 > babel-plugin-transform-es2015-block-scoping >
+          lodash
+    - expo > react-native-svg > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: expo > react-native-svg > lodash
+    - babel-preset-es2015 > babel-plugin-transform-es2015-classes > babel-helper-define-map > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-es2015 > babel-plugin-transform-es2015-classes >
+          babel-helper-define-map > lodash
+    - babel-preset-es2015 > babel-plugin-transform-es2015-sticky-regex > babel-helper-regex > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-preset-es2015 > babel-plugin-transform-es2015-sticky-regex >
+          babel-helper-regex > lodash
+    - expo > babel-preset-expo > babel-plugin-transform-decorators-legacy > babel-template > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-plugin-transform-decorators-legacy >
+          babel-template > lodash
+    - expo > babel-preset-expo > babel-preset-react-native > babel-plugin-transform-es2015-block-scoping > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-preset-react-native >
+          babel-plugin-transform-es2015-block-scoping > lodash
+    - expo > babel-preset-expo > babel-preset-react-native > babel-plugin-react-transform > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-preset-react-native >
+          babel-plugin-react-transform > lodash
+    - expo > react-native-maps > babel-preset-react-native > babel-plugin-react-transform > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > react-native-maps > babel-preset-react-native >
+          babel-plugin-react-transform > lodash
+    - expo > babel-preset-expo > babel-plugin-transform-decorators-legacy > babel-template > babel-traverse > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-plugin-transform-decorators-legacy >
+          babel-template > babel-traverse > lodash
+    - expo > babel-preset-expo > babel-preset-react-native > babel-plugin-transform-es2015-classes > babel-helper-define-map > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-preset-react-native >
+          babel-plugin-transform-es2015-classes > babel-helper-define-map >
+          lodash
+    - expo > babel-preset-expo > babel-preset-react-native > react-transform-hmr > react-proxy > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-preset-react-native >
+          react-transform-hmr > react-proxy > lodash
+    - expo > babel-preset-expo > babel-plugin-transform-decorators-legacy > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2026-02-05T09:46:58.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          expo > babel-preset-expo > babel-plugin-transform-decorators-legacy >
+          babel-template > babel-traverse > babel-types > lodash
