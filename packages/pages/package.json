@@ -13,7 +13,9 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist"
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -63,7 +65,8 @@
     "apollo-link-http": "1.5.7",
     "graphql": "14.0.2",
     "prop-types": "15.6.2",
-    "react-apollo": "2.1.4"
+    "react-apollo": "2.1.4",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -73,5 +76,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
