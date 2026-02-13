@@ -13,7 +13,9 @@
     "test": "jest --config='./__tests__/jest.config.js'",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "bundle": "NODE_ENV=production webpack -p",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -69,7 +71,8 @@
     "@times-components/context": "0.5.22",
     "@times-components/provider": "1.8.12",
     "@times-components/styleguide": "3.12.2",
-    "styled-components": "3.4.0"
+    "styled-components": "3.4.0",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": ">=16.5",
@@ -79,5 +82,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
