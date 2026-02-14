@@ -40,7 +40,7 @@
     "prettier": "1.14.3"
   },
   "dependencies": {
-    "@times-components/provider-test-tools": "1.10.10",
+    "@times-components/provider-test-tools": "1.17.11",
     "@times-components/schema": "0.1.20",
     "apollo-server": "2.2.6",
     "graphql": "14.0.2",
