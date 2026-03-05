@@ -52,7 +52,7 @@
     "babel-core": "6.26.0",
     "babel-runtime": "6.26.0",
     "prop-types": "15.6.2",
-    "react": "16.6.3",
+    "react": "19.2.4",
     "react-apollo": "2.1.4",
     "react-test-renderer": "16.6.3"
   },
